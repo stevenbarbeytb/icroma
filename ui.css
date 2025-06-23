@@ -1,0 +1,240 @@
+body {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 850px;
+    height: 650px;
+    margin: 20px auto;
+    background-color: #111;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
+    border: 1px solid var(--redlife-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--redlife-color);
+    padding-bottom: 10px;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 15px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    flex-grow: 1;
+}
+
+.redlife-text {
+    color: var(--redlife-color);
+    font-weight: bold;
+}
+
+.close-btn {
+    background: var(--redlife-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.close-btn:hover {
+    transform: rotate(90deg);
+    background: #ff3333;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background: #222;
+    color: white;
+    font-size: 14px;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: var(--redlife-color);
+}
+
+.search-box button {
+    padding: 0 20px;
+    background: var(--redlife-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-box button:hover {
+    background: #ff3333;
+}
+
+.video-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgba(255, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#playpause {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--redlife-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+#playpause:hover {
+    transform: scale(1.1);
+    background: #ff3333;
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.volume-control button {
+    background: #333;
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.volume-control button:hover {
+    background: var(--redlife-color);
+}
+
+.volume-display {
+    min-width: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--redlife-color);
+}
+
+.history-section {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.history-section h2 {
+    color: var(--redlife-color);
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.history-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.history-item:hover {
+    background: rgba(255, 0, 0, 0.1);
+    border-left: 3px solid var(--redlife-color);
+}
+
+.history-title {
+    flex-grow: 1;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.history-date {
+    font-size: 12px;
+    color: #999;
+    margin: 0 15px;
+}
+
+.history-play {
+    background: var(--redlife-color);
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.history-play:hover {
+    transform: scale(1.1);
+    background: #ff3333;
+}
+
+/* Scrollbar personnalisée */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--redlife-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff3333;
+}
